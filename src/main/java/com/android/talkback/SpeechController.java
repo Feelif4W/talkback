@@ -16,6 +16,7 @@
 
 package com.android.talkback;
 
+import android.app.ActivityManager;
 import android.os.Message;
 import android.support.annotation.NonNull;
 
@@ -756,7 +757,9 @@ public class SpeechController implements TalkBackService.KeyEventListener {
      * Stops speech and shuts down this controller.
      */
     public void shutdown() {
-        interrupt();
+
+        //TODO: this is what has been interrupting Feelif texto speech -Jan
+        //interrupt();
 
         mFailoverTts.shutdown();
 
