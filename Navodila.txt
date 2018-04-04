@@ -1,0 +1,13 @@
+﻿gradlew build
+gradlew uninstallAll
+gradlew installAospRelease
+
+-Če je Shared error neki, chmod 666 /data/system/packages.xml	(Lah tud rm pa pol chmod, če ne dela iz prve..)
+			+ rm /data/dalvik-cache
+			Ne pozabt čist zbrisat prejšnjega talkbacka! - Poglej v packages, kam kaže package.
+			Če je še zmer čudn, 
+			abd shell pm list packages -u
+			abd uninstall com.google.android.marvin.talkback
+
+				
+https://forum.xda-developers.com/showthread.php?t=1219029
